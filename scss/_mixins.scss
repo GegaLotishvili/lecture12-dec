@@ -1,0 +1,21 @@
+@mixin goflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+
+@mixin mybutton {
+    width: 120px;
+    height: 60px;
+    background-color: lightblue;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    display: inline;
+    &:hover {
+        cursor: pointer;
+        background-color: $mycolor2;
+    }
+}
